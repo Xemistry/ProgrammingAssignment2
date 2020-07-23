@@ -30,4 +30,6 @@ cacheSolve <- function(x, ...) {
     return(storage)
   }
     matrix <- x$get()
+  x$setinverse(storage)
+  storage
 }
